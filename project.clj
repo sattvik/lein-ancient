@@ -10,15 +10,7 @@
                  ^:source-dep [potemkin "0.4.3"]
                  ^:source-dep [version-clj "0.1.2"]
                  ^:source-dep [jansi-clj "0.1.0"]
-                 ^:source-dep [ancient-clj "0.3.14"
-                               :exclusions [com.amazonaws/aws-java-sdk-s3
-                                            clj-http]]
-
-                 ;; S3 dependency is pinned because of conflicts of newer
-                 ;; versions with Leiningen's precompiled dependencies.
-                 [com.amazonaws/aws-java-sdk-s3 "1.9.0"
-                  :exclusions [joda-time]
-                  :upgrade? false]]
+                 ^:source-dep [ancient-clj "0.3.15-SNAPSHOT"]]
   :license {:name "MIT License"
             :url "https://opensource.org/licenses/MIT"
             :year 2013
